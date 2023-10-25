@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Latest Queries</title>
+	</head>
+
+	<body>
+		<h1>Latest Lat/Long Lookups</h1>
+		<table border="1">
+        <thead>
+			<tr>
+				<th>Cities</th>
+			</tr>
+        </thead>
+        <tbody>
+			{% for city in cities %}
+			<tr>
+				<td>{{city.name}}</td>
+			</tr>
+			{% endfor %}
+         </tbody>>   
+		</table>
+	</body>
+</html>
